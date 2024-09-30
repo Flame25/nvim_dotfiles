@@ -10,3 +10,5 @@ vim.keymap.set(
 	"<cmd>Telescope buffers sort_mru=true sort_lastused=true<cr>",
 	{ desc = "Switch Buffer" }
 )
+
+vim.keymap.set("n", "<leader>ut", "<cmd>Themery<cr>", { desc = "Themery Live" })

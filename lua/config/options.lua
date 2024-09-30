@@ -4,3 +4,4 @@ vim.opt.tabstop = 2 -- Number of spaces for a tab
 vim.opt.shiftwidth = 2 -- Number of spaces for indentation
 vim.opt.termguicolors = true
 vim.notify = require("notify")
+vim.wo.number = true

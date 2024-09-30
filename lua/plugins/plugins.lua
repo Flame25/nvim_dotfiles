@@ -281,6 +281,7 @@ return {
 						return require("which-key.extras").expand.buf()
 					end,
 				},
+				{ "<leader>ut", icon = { icon = "󰵆", color = "blue" } },
 			},
 		},
 		keys = {
@@ -572,6 +573,17 @@ return {
 						pcall(nvim_bufferline)
 					end)
 				end,
+			})
+		end,
+	},
+	{
+		"zaldih/themery.nvim",
+		event = "VeryLazy",
+		config = function()
+			-- Minimal config
+			require("themery").setup({
+				themes = { "catppuccin-latte", "catppuccin-frappe", "catppuccin-macchiato", "catppuccin-mocha" }, -- Your list of installed colorschemes.
+				livePreview = true,                                                                           -- Apply theme while picking. Default to true.
 			})
 		end,
 	},
